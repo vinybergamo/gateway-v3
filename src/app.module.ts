@@ -7,6 +7,7 @@ import { CacheModule } from '@nestjs/cache-manager';
 import { milliseconds } from 'date-fns';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import { APP_GUARD } from '@nestjs/core';
+import { CompaniesModule } from './companies/companies.module';
 
 @Module({
   imports: [
@@ -35,6 +36,7 @@ import { APP_GUARD } from '@nestjs/core';
     DatabaseModule,
     UsersModule,
     AuthModule,
+    CompaniesModule,
   ],
   providers: [
     {
